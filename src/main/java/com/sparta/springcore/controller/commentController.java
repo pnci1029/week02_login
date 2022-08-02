@@ -9,10 +9,7 @@ import com.sparta.springcore.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -31,13 +28,13 @@ public class commentController {
         commentService.showComment();
     }
 
-    @PostMapping("/api/comment")
+    @PostMapping("/api/comment/{id}")
     public void postComment(@RequestBody CommentDto dto,
-                            @AuthenticationPrincipal UserDetailsImpl userDetails) {
-        User user = userDetails.getUser();
+                            @AuthenticationPrincipal UserDetailsImpl userDetails,
+                            @PathVariable Long id) {
+        String username = userDetails.getUsername();
 
-        ArticleEntity article = new ArticleEntity();
-        commentService.postComment(dto, user);
+        commentService.postComment(dto, username, id);
 
     }
 }

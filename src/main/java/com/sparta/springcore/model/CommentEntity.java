@@ -17,23 +17,31 @@ public class CommentEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long commentid;
 
     @Column(nullable = false)
     private String commentContent;
 
+    @Column(nullable = false)
+    private String username;
+
     @ManyToOne
-    @JoinColumn(name = "Comment_User_name")
-    private User user;
+    @JoinColumn(name = "ARTICLE_ENTITY_ID")
+    private ArticleEntity articleEntity;
+
+//    @ManyToOne()
+//    private User user;
 
 
-    public CommentEntity(String commentContent, User user) {
+
+    public CommentEntity(String commentContent, ArticleEntity articleEntity, String username) {
         this.commentContent = commentContent;
-        this.user = user;
+        this.articleEntity = articleEntity;
+        this.username = username;
     }
 
 
-    public CommentEntity(String commentContent, String username) {
-        this.commentContent = commentContent;
-    }
+//    public CommentEntity(String commentContent, String username) {
+//        this.commentContent = commentContent;
+//    }
 }

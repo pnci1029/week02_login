@@ -33,7 +33,7 @@ public class ArticleController {
         articleService.postArticle(dto, user);
     }
 
-    @PutMapping("api/articles/{id}")
+    @PutMapping("/api/articles/{id}")
     public void articlePut(@PathVariable Long id,
                            @RequestBody ArticleDto dto,
                            @AuthenticationPrincipal UserDetailsImpl userDetails) {
@@ -42,8 +42,8 @@ public class ArticleController {
 
         articleService.putArticle(dto, id, user);
     }
-
-    @DeleteMapping("api/articles/{id}")
+//          게시물 13
+    @DeleteMapping("/api/articles/{id}")
     public void articleDelete(@PathVariable Long id) {
         articleService.deleteArticle(id);
     }

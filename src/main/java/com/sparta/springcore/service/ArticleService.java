@@ -7,6 +7,8 @@ import com.sparta.springcore.repository.ArticleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
+
 @Service
 public class ArticleService {
 
@@ -39,12 +41,13 @@ public class ArticleService {
         articleRepository.save(target);
 
     }
-
+    @Transactional
     public void deleteArticle(Long id) {
-        ArticleEntity target= articleRepository.findById(id).orElseThrow(
-                () -> new NullPointerException("삭제하려는 아이디가 없습니다")
-        );
-
-        articleRepository.delete(target);
+//        ArticleEntity target= articleRepository.findById(id).orElseThrow(
+//                () -> new NullPointerException("삭제하려는 아이디가 없습니다")
+//        );
+//
+//        articleRepository.delete(target);
+        articleRepository.deleteById(id);
     }
 }

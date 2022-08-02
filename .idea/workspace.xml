@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb06d887-257e-434f-9656-5e5f82fd1461" name="Changes" comment="" />
+    <list default="true" id="bb06d887-257e-434f-9656-5e5f82fd1461" name="Changes" comment="5주차 숙제풀이">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/controller/commentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/controller/commentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/model/ArticleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/model/ArticleEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/model/CommentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/model/CommentEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/repository/ArticleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/repository/ArticleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/repository/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/repository/CommentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/service/CommentService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,8 +83,10 @@
   "keyToString": {
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelOrder2": "2",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
+    "RequestMappingsPanelWidth2": "75",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/82105/Desktop/심화튜토리얼/jwt",
     "spring.configuration.checksum": "694321cf37f1922e80f54e63ad72f4bb"
@@ -295,7 +308,7 @@
       <workItem from="1632368897149" duration="22609000" />
       <workItem from="1632402299285" duration="4256000" />
       <workItem from="1659434412015" duration="4652000" />
-      <workItem from="1659441659587" duration="9074000" />
+      <workItem from="1659441659587" duration="18660000" />
     </task>
     <task id="LOCAL-00020" summary="1주차 숙제 답안코드 (ItemSearchController, ItemSearchService)">
       <created>1630534099186</created>

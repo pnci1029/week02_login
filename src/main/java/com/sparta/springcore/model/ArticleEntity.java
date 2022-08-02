@@ -17,7 +17,7 @@ import java.util.List;
 public class ArticleEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
@@ -27,8 +27,11 @@ public class ArticleEntity {
     private String content;
 
     @ManyToOne
-    @JoinColumn(name = "ARTICLE_USER_ID", nullable = false)
+    @JoinColumn(name = "USER_ID", nullable = false)
     private User user;
+                                                              //mapped by가  있으면 db에 컬럼이 안생김
+    @OneToMany(mappedBy = "commentid",cascade = CascadeType.REMOVE)     // 부모객체가 삭제되면 자식도 삭제 아님말고
+    private List<CommentEntity> commentEntity;
 
 //    @OneToMany
 //    @JoinColumn
