@@ -2,5 +2,5 @@
 /.gradle/
 /build/
 /build/classes/java/main/
-
+/build/classes/java/main/resources/application-ignore.properties
 application-ignore.properties
