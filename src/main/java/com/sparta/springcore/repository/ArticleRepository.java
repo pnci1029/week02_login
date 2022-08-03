@@ -7,4 +7,5 @@ import java.util.Optional;
 
 public interface ArticleRepository extends JpaRepository<ArticleEntity, Long> {
     Optional<ArticleEntity> findArticleIdById(Long id);
+
 }

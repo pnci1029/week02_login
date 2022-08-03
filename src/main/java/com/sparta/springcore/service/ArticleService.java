@@ -37,17 +37,30 @@ public class ArticleService {
         ArticleEntity target = articleRepository.findById(id).orElseThrow(
                 () -> new NullPointerException("수정하려는 아이디가 없습니다ㅓ")
         );
+//        db에있는 유저아이디랑 수정하기위해 접속된  유저아이디가 다르면 수정불가
+        String username = target.getUser().getUsername();
+        String getUsername = user.getUsername();
+
+        if (!username.equals(getUsername)) {
+            throw new NullPointerException("수정하려는 아이디가 다릅니다");
+        }
         target.update(dto, user);
         articleRepository.save(target);
 
     }
     @Transactional
-    public void deleteArticle(Long id) {
-//        ArticleEntity target= articleRepository.findById(id).orElseThrow(
-//                () -> new NullPointerException("삭제하려는 아이디가 없습니다")
-//        );
-//
-//        articleRepository.delete(target);
-        articleRepository.deleteById(id);
+    public void deleteArticle(Long id, User user) {
+        ArticleEntity target= articleRepository.findById(id).orElseThrow(
+                () -> new NullPointerException("삭제하려는 아이디가 없습니다")
+        );
+//        db에있는 유저아이디랑 삭제하기위해 접속된  유저아이디가 다르면 수정불가
+        String username = user.getUsername();
+        String getUsername = target.getUser().getUsername();
+        if (username != getUsername) {
+            throw new NullPointerException("삭제하려는 아이디가 다릅니다");
+        }
+
+        articleRepository.delete(target);
+//        articleRepository.deleteById(id);
     }
 }

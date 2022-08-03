@@ -33,10 +33,33 @@ public class CommentService {
         ArticleEntity articleId = articleRepository.findArticleIdById(id).orElseThrow(
                 () -> new NullPointerException("아티클아이디가 없습니다")
         );
-        Long result = articleId.getId();
         String commentContent = dto.getCommentContent();
 
         CommentEntity data = new CommentEntity(commentContent, articleId, username);
         commentRepository.save(data);
+    }
+
+    @Transactional
+    public void putComment(CommentDto dto, Long id, User user) {
+        CommentEntity target = commentRepository.findByArticleEntityId(id).orElseThrow(
+                () ->new NullPointerException("수정하려는 아이디가 없습니다")
+        );
+
+        if(!target.getUsername().equals(user.getUsername())){
+            throw new NullPointerException("다른사용자는 수정할수없습니다");
+        }
+        target.update(dto);
+        commentRepository.save(target);
+    }
+
+    public void deletecomment(Long id, User user) {
+        CommentEntity target = commentRepository.findByArticleEntityId(id).orElseThrow(
+                () -> new NullPointerException("삭제하려는 아이디가 없습니다")
+        );
+
+        if (!target.getUsername().equals(user.getUsername())) {
+            throw new NullPointerException("다른 사용자는삭제할수없습니다");
+        }
+
     }
 }

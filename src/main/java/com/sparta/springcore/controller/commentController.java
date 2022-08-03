@@ -35,6 +35,20 @@ public class commentController {
         String username = userDetails.getUsername();
 
         commentService.postComment(dto, username, id);
+    }
 
+    @PutMapping("/api/comment/{id}")
+    public void putComment(@PathVariable Long id,
+                           @RequestBody CommentDto dto,
+                           @AuthenticationPrincipal UserDetailsImpl userDetails) {
+        User user = userDetails.getUser();
+        commentService.putComment(dto, id, user);
+    }
+
+    @DeleteMapping("/api/comment/{id}")
+    public void deleteComment(@PathVariable Long id,
+                              @AuthenticationPrincipal UserDetailsImpl userDetails) {
+        User user = userDetails.getUser();
+        commentService.deletecomment(id, user);
     }
 }

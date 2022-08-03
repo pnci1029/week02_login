@@ -44,7 +44,9 @@ public class ArticleController {
     }
 //          게시물 13
     @DeleteMapping("/api/articles/{id}")
-    public void articleDelete(@PathVariable Long id) {
-        articleService.deleteArticle(id);
+    public void articleDelete(@PathVariable Long id,
+                              @AuthenticationPrincipal UserDetailsImpl userDetails) {
+        User user = userDetails.getUser();
+        articleService.deleteArticle(id, user);
     }
 }

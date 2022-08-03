@@ -30,7 +30,7 @@ public class ArticleEntity {
     @JoinColumn(name = "USER_ID", nullable = false)
     private User user;
                                                               //mapped by가  있으면 db에 컬럼이 안생김
-    @OneToMany(mappedBy = "commentid",cascade = CascadeType.REMOVE)     // 부모객체가 삭제되면 자식도 삭제 아님말고
+    @OneToMany(mappedBy = "username",cascade = CascadeType.ALL)     // 부모객체가 삭제되면 자식도 삭제 아님말고
     private List<CommentEntity> commentEntity;
 
 //    @OneToMany

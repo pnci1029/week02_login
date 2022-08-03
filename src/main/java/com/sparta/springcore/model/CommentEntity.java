@@ -1,5 +1,6 @@
 package com.sparta.springcore.model;
 
+import com.sparta.springcore.dto.CommentDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -17,7 +18,7 @@ public class CommentEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long commentid;
+    private Long id;
 
     @Column(nullable = false)
     private String commentContent;
@@ -26,7 +27,7 @@ public class CommentEntity {
     private String username;
 
     @ManyToOne
-    @JoinColumn(name = "ARTICLE_ENTITY_ID")
+    @JoinColumn(name = "ARTICLEENTITY_ID")
     private ArticleEntity articleEntity;
 
 //    @ManyToOne()
@@ -38,6 +39,10 @@ public class CommentEntity {
         this.commentContent = commentContent;
         this.articleEntity = articleEntity;
         this.username = username;
+    }
+
+    public void update(CommentDto dto) {
+        this.commentContent = dto.getCommentContent();
     }
 
 
