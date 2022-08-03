@@ -53,7 +53,7 @@ public class ArticleService {
         ArticleEntity target= articleRepository.findById(id).orElseThrow(
                 () -> new NullPointerException("삭제하려는 아이디가 없습니다")
         );
-//        db에있는 유저아이디랑 삭제하기위해 접속된  유저아이디가 다르면 수정불가
+//        db에있는 유저아이디랑 삭제하기위해 접속된  유저아이디가 다르면 삭제불가
         String username = user.getUsername();
         String getUsername = target.getUser().getUsername();
         if (username != getUsername) {

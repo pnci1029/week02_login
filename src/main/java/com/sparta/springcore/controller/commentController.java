@@ -45,10 +45,11 @@ public class commentController {
         commentService.putComment(dto, id, user);
     }
 
-    @DeleteMapping("/api/comment/{id}")
-    public void deleteComment(@PathVariable Long id,
+    @DeleteMapping("/api/comment/{id}/{commentid}")
+    public void deleteComment(@PathVariable Long id,@PathVariable Long commentid,
                               @AuthenticationPrincipal UserDetailsImpl userDetails) {
         User user = userDetails.getUser();
-        commentService.deletecomment(id, user);
+
+        commentService.deletecomment(id, commentid,user);
     }
 }

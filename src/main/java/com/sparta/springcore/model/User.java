@@ -36,8 +36,8 @@ public class User {
     @Column(unique = true)
     private Long kakaoId;
 
-    @OneToMany(mappedBy = "id")
-    private List<ArticleEntity> article;
+//    @OneToMany(mappedBy = "id")
+//    private List<ArticleEntity> article;
 
     public User(String username, String password, String email, UserRoleEnum role) {
         this.username = username;

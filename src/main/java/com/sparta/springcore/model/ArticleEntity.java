@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
 import java.util.List;
@@ -27,10 +29,10 @@ public class ArticleEntity {
     private String content;
 
     @ManyToOne
-    @JoinColumn(name = "USER_ID", nullable = false)
+    @JoinColumn(name = "ARTICLE_USER_ID", nullable = false)
     private User user;
-                                                              //mapped by가  있으면 db에 컬럼이 안생김
-    @OneToMany(mappedBy = "username",cascade = CascadeType.ALL)     // 부모객체가 삭제되면 자식도 삭제 아님말고
+                                                                                          //mapped by가  있으면 db에 컬럼이 안생김
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)     // 부모객체가 삭제되면 자식도 삭제 아님말고
     private List<CommentEntity> commentEntity;
 
 //    @OneToMany

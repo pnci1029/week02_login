@@ -52,17 +52,17 @@ public class CommentService {
         commentRepository.save(target);
     }
 
-    public void deletecomment(Long id, User user) {
-        CommentEntity target = commentRepository.findByArticleEntityId(id).orElseThrow(
-                () -> new NullPointerException("삭제하려는 아이디가 없습니다")
+    public void deletecomment(Long articleid, Long commentid,User user) {
+        CommentEntity target = commentRepository.findById(commentid).orElseThrow(
+                () -> new NullPointerException("삭제하려는 댓글이 없습니다")
         );
-        Long getId = target.getArticleEntity().getId();
-        System.out.println(getId);
-        Long targetid = target.getId();
-        System.out.println(targetid);
+//        if (!articleid.equals(commentid)) {
+//            throw new NullPointerException("다른 사용자는삭제할수없습니다");
+//        }
         if (!target.getUsername().equals(user.getUsername())) {
             throw new NullPointerException("다른 사용자는삭제할수없습니다");
         }
+
         commentRepository.deleteById(target.getId());
 
     }

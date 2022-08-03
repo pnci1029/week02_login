@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
@@ -26,8 +28,9 @@ public class CommentEntity {
     @Column(nullable = false)
     private String username;
 
-    @ManyToOne
-    @JoinColumn(name = "ARTICLEENTITY_ID")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @OnDelete(action= OnDeleteAction.CASCADE)
+//    @JoinColumn(name = "ARTICLEENTITY_ID")
     private ArticleEntity articleEntity;
 
 //    @ManyToOne()
