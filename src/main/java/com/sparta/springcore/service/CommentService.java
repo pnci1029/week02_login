@@ -56,10 +56,14 @@ public class CommentService {
         CommentEntity target = commentRepository.findByArticleEntityId(id).orElseThrow(
                 () -> new NullPointerException("삭제하려는 아이디가 없습니다")
         );
-
+        Long getId = target.getArticleEntity().getId();
+        System.out.println(getId);
+        Long targetid = target.getId();
+        System.out.println(targetid);
         if (!target.getUsername().equals(user.getUsername())) {
             throw new NullPointerException("다른 사용자는삭제할수없습니다");
         }
+        commentRepository.deleteById(target.getId());
 
     }
 }

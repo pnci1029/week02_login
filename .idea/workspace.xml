@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb06d887-257e-434f-9656-5e5f82fd1461" name="Changes" comment="08.03">
+    <list default="true" id="bb06d887-257e-434f-9656-5e5f82fd1461" name="Changes" comment="08.03.01">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/controller/commentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/controller/commentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/model/ArticleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/model/ArticleEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/model/CommentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/model/CommentEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/repository/ArticleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/repository/ArticleRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/repository/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/repository/CommentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/service/ArticleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/service/CommentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +81,7 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RequestMappingsPanelWidth2&quot;: &quot;75&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/82105/Desktop/심화튜토리얼/jwt&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/82105/Desktop/memoproject1-master&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;694321cf37f1922e80f54e63ad72f4bb&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -307,14 +302,7 @@
       <workItem from="1632402299285" duration="4256000" />
       <workItem from="1659434412015" duration="4652000" />
       <workItem from="1659441659587" duration="19804000" />
-      <workItem from="1659485107137" duration="5798000" />
-    </task>
-    <task id="LOCAL-00021" summary="05. '스프링 시큐리티' 프레임워크">
-      <created>1630732870776</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1630732870776</updated>
+      <workItem from="1659485107137" duration="10306000" />
     </task>
     <task id="LOCAL-00022" summary="06. 회원 가입 UI 반영">
       <created>1630739091708</created>
@@ -652,7 +640,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659461645565</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="08.03.01">
+      <created>1659491310338</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1659491310339</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -774,7 +769,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="06. Mock object 직접 구현을 통한 단위 테스트" />
     <MESSAGE value="07. Mockito mock 을 사용한 단위 테스트" />
     <MESSAGE value="test 10" />
     <MESSAGE value="10. 스프링 부트를 이용한 통합 테스트 - 구현" />
@@ -799,40 +793,41 @@
     <MESSAGE value="13. 스프링 Global 예외 처리 방법" />
     <MESSAGE value="5주차 숙제풀이" />
     <MESSAGE value="08.03" />
-    <option name="LAST_COMMIT_MESSAGE" value="08.03" />
+    <MESSAGE value="08.03.01" />
+    <option name="LAST_COMMIT_MESSAGE" value="08.03.01" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/sparta/springcore/controller/ArticleController.java</url>
-          <line>47</line>
+          <line>49</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/springcore/service/ArticleService.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="25" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/springcore/service/CommentService.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/springcore/service/ArticleService.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="26" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/springcore/service/CommentService.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/springcore/service/ArticleService.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="27" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/springcore/service/CommentService.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/springcore/service/ArticleService.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="28" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/springcore/service/CommentService.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/springcore/service/ArticleService.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="29" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/springcore/service/CommentService.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
