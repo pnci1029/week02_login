@@ -1,5 +1,6 @@
 package com.sparta.springcore.model;
 
+import com.sparta.springcore.TimeStamped;
 import com.sparta.springcore.dto.CommentDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,7 +17,7 @@ import javax.persistence.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class CommentEntity {
+public class CommentEntity extends TimeStamped {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

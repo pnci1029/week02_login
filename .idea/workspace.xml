@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb06d887-257e-434f-9656-5e5f82fd1461" name="Changes" comment="08.03.02">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/TimeStamped.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/controller/commentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/controller/commentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/SpringcoreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/SpringcoreApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/model/ArticleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/model/ArticleEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/model/CommentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/model/CommentEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/repository/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/repository/CommentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/service/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/springcore/service/CommentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +37,8 @@
         <option value="Enum" />
         <option value="HTML File" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -309,14 +305,7 @@
       <workItem from="1659434412015" duration="4652000" />
       <workItem from="1659441659587" duration="19804000" />
       <workItem from="1659485107137" duration="10306000" />
-      <workItem from="1659506497047" duration="8820000" />
-    </task>
-    <task id="LOCAL-00024" summary="07. 회원 가입 기능 구현">
-      <created>1630752147995</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1630752147995</updated>
+      <workItem from="1659506497047" duration="12965000" />
     </task>
     <task id="LOCAL-00025" summary="Test 08-09 패스워드 암호화 / 로그인, 로그아웃 기능 구현">
       <created>1630774816296</created>
@@ -654,7 +643,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659507372156</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="08.03.02">
+      <created>1659520171646</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1659520171646</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
