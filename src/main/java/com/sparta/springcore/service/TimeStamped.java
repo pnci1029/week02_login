@@ -1,4 +1,4 @@
-package com.sparta.springcore;
+package com.sparta.springcore.service;
 
 import lombok.Getter;
 import org.springframework.data.annotation.CreatedDate;

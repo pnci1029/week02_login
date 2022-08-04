@@ -1,13 +1,11 @@
 package com.sparta.springcore.model;
 
-import com.sparta.springcore.TimeStamped;
+import com.sparta.springcore.service.TimeStamped;
 import com.sparta.springcore.dto.ArticleDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.hibernate.annotations.OnDelete;
-import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
 import java.util.List;
